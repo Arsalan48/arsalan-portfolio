@@ -59,6 +59,11 @@
   background: var(--surface);
 }
 
+.nav-links button.nav-active {
+  color: var(--accent);
+  background: var(--surface);
+}
+
 .hamburger {
   display: none;
   flex-direction: column;
