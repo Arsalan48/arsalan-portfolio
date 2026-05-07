@@ -29,6 +29,14 @@ const projects = [
     tags: ['React.js', 'Node.js', 'MongoDB', 'Express.js'],
     icon: '💼',
   },
+  {
+    title: 'Attiya — Blood Donation Network Pakistan',
+    description:
+      'Performed complete QA testing and security auditing on Attiya, a blood donation platform connecting donors and patients across Pakistan. Identified 6 critical bugs including phone number field restriction, email verification failure, missing messaging features, and a non-functional dashboard. Conducted a full security audit using Mozilla Observatory, Security Headers, and Pentest-Tools. Evaluated OWASP Top 10 risks and found vulnerabilities including missing CSP header, X-Frame-Options, and suspicious TODO comments in source code. Delivered detailed reports and fix recommendations to the development team.',
+    tags: ['QA Testing', 'Security Audit', 'OWASP', 'Bug Reporting', 'Website Testing'],
+    icon: '🩸',
+    link: 'https://attiya-connect-pakistan.lovable.app/',
+  },
 ]
 
 export default function Projects() {
@@ -48,6 +56,16 @@ export default function Projects() {
                   <span className="tag" key={t}>{t}</span>
                 ))}
               </div>
+              {p.link && (
+                <a
+                  className="project-link"
+                  href={p.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Live Site →
+                </a>
+              )}
             </div>
           ))}
         </div>

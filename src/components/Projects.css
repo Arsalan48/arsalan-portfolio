@@ -71,6 +71,25 @@
   border: 1px solid rgba(124, 111, 255, 0.25);
 }
 
+.project-link {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  border: 1px solid rgba(124, 111, 255, 0.35);
+  border-radius: 8px;
+  padding: 7px 16px;
+  transition: all 0.2s;
+  background: rgba(124, 111, 255, 0.06);
+}
+
+.project-link:hover {
+  background: rgba(124, 111, 255, 0.15);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
 @media (max-width: 768px) {
   .projects-grid {
     grid-template-columns: 1fr;
